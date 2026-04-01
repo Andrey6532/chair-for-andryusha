@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сбор на трон 🪑</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff00cc, #3333ff);
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      background: rgba(0,0,0,0.75);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 750px;
+      margin: auto;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+    h1 { font-size: 36px; }
+    h2 { margin-top: 25px; }
+    .progress {
+      background: #444;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+    .progress-bar {
+      height: 25px;
+      width: 12%;
+      background: limegreen;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: gold;
+      color: black;
+      font-weight: bold;
+    }
+    button:hover { background: orange; }
+    .meme { margin: 10px 0; font-size: 18px; }
+    img { max-width: 100%; border-radius: 15px; margin: 15px 0; }
+    #cat { display:none; max-width:300px; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <h1>🔥 СБОР НА НОВЫЙ ТРОН ДЛЯ АНДРЮШИ 🔥</h1>
+
+    <p class="meme">Почему Андрюше нужен стул? 🤔</p>
+    <p class="meme">💀 Текущий стул уже на последнем дыхании</p>
+    <p class="meme">🪑 Он пошарпан, треснул и морально устал</p>
+    <p class="meme">🩻 Спина Андрюши уже страдает</p>
+
+    <h2>📸 Старый стул (легенда, но пора на покой)</h2>
+    <img src="old-chair.jpg" alt="Старый стул">
+    <p>- Скрип: 10/10</p>
+    <p>- Комфорт: -3/10</p>
+    <p>- Надежность: 💀</p>
+
+    <h2>✨ Новый стул (Corsair T3 Rush)</h2>
+    <img src="new-chair.jpg" alt="Новый стул">
+    <p>- Комфорт: 100/10 😎</p>
+    <p>- Поддержка спины: есть</p>
+    <p>- Мягкость: кайф</p>
+    <p>- Внешний вид: как у про-геймера</p>
+
+    <h2>💸 Цель: 269€</h2>
+    <h3>Собрано: 30€ из 269€</h3>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <p class="meme">Почему вы должны помочь 👇</p>
+    <p>- Андрюша хорошо себя ведет</p>
+    <p>- У него хорошие оценки</p>
+    <p>- Ему это реально нужно</p>
+    <p>- Он будет очень рад 😎</p>
+
+    <button onclick="showCat()">ЗАДОНАТИТЬ 💰</button>
+
+    <p class="meme">Можно найти Андрюшу лично 🤝</p>
+    <p class="meme">Или написать ему в личку за картой 📩</p>
+
+    <img id="cat" src="котик.png">
+
+  </div>
+
+  <script>
+    function showCat() {
+      document.getElementById('cat').style.display = 'block';
+      alert('Обращайтесь к Андрею в личные сообщения :)');
+    }
+  </script>
+
+</body>
+</html>
